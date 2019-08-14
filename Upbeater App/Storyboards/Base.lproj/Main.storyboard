@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App Landing View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController restorationIdentifier="AppLandingViewController" storyboardIdentifier="AppLandingViewController" id="BYZ-38-t0r" customClass="AppLandingViewController" customModule="Upbeater_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fog-Uv-faG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="companyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="byf-PI-Q7S">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="UGE-67-i62"/>
+                                    <constraint firstAttribute="height" constant="200" id="UyW-mh-3FP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upbeater © 2019. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpT-tu-7wE">
+                                <rect key="frame" x="15" y="845.5" width="384" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="12"/>
+                                <color key="textColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fog-Uv-faG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1T8-Wg-jjy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fpT-tu-7wE" secondAttribute="trailing" constant="15" id="59f-QE-CgY"/>
+                            <constraint firstItem="byf-PI-Q7S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Q9-rv-Lne"/>
+                            <constraint firstItem="fpT-tu-7wE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="GtU-ed-qn9"/>
+                            <constraint firstItem="Fog-Uv-faG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NXP-uh-UiC"/>
+                            <constraint firstItem="Fog-Uv-faG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hXB-vW-cno"/>
+                            <constraint firstItem="byf-PI-Q7S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kOm-wc-AhR"/>
+                            <constraint firstAttribute="bottom" secondItem="Fog-Uv-faG" secondAttribute="bottom" id="kl3-QY-eLL"/>
+                            <constraint firstItem="fpT-tu-7wE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qen-AV-BD6"/>
+                            <constraint firstItem="fpT-tu-7wE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="zTT-nC-Ttl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="Kzy-eT-hgE" kind="presentation" identifier="ShowHome" id="MwV-Hs-AyT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="18.75"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="EZT-01-bCL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="Kzy-eT-hgE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZx-BP-ell" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957" y="19"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="companyLogo" width="500" height="500"/>
+    </resources>
+</document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="39t-Qy-Cfq">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Team Chat View Controller-->
+        <scene sceneID="XYP-Ps-Aed">
+            <objects>
+                <viewController restorationIdentifier="TeamChatViewController" storyboardIdentifier="TeamChatViewController" id="Mqe-79-VPH" customClass="TeamChatViewController" customModule="Upbeater_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3kk-uC-yee">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51m-Qr-xU8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Be8-hQ-wew">
+                                        <rect key="frame" x="16" y="50" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ADn-yD-WZl"/>
+                                            <constraint firstAttribute="width" constant="50" id="IcH-BL-iAi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Be8-hQ-wew" firstAttribute="leading" secondItem="51m-Qr-xU8" secondAttribute="leading" constant="16" id="8MT-i1-ggs"/>
+                                    <constraint firstItem="Be8-hQ-wew" firstAttribute="top" secondItem="51m-Qr-xU8" secondAttribute="top" constant="50" id="xsg-lT-mVF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529410000001" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="51m-Qr-xU8" firstAttribute="top" secondItem="3kk-uC-yee" secondAttribute="top" id="Eg3-5R-grR"/>
+                            <constraint firstItem="51m-Qr-xU8" firstAttribute="leading" secondItem="sfe-wL-SJM" secondAttribute="leading" id="Z2g-tU-uCD"/>
+                            <constraint firstItem="51m-Qr-xU8" firstAttribute="trailing" secondItem="sfe-wL-SJM" secondAttribute="trailing" id="ahw-74-xtD"/>
+                            <constraint firstAttribute="bottom" secondItem="51m-Qr-xU8" secondAttribute="bottom" id="vAH-WV-UkS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sfe-wL-SJM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4L1-ki-XPd"/>
+                    <connections>
+                        <outlet property="menuNavigationView" destination="Be8-hQ-wew" id="A1W-oe-0GX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tq7-3C-nau" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055.072463768116" y="62.946428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aED-Mf-MK3">
+            <objects>
+                <navigationController restorationIdentifier="TeamChatTab" storyboardIdentifier="TeamChatTab" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="39t-Qy-Cfq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f7K-0r-gbk">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Mqe-79-VPH" kind="relationship" relationship="rootViewController" id="4S5-CN-tKe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxc-jh-fQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.92753623188406" y="62.946428571428569"/>
+        </scene>
+    </scenes>
+</document>

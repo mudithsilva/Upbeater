@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jaJ-zc-i6P">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ContactHR View Controller-->
+        <scene sceneID="ypg-G8-4fh">
+            <objects>
+                <viewController restorationIdentifier="ContactHRViewController" storyboardIdentifier="ContactHRViewController" id="VlM-qi-NES" customClass="ContactHRViewController" customModule="Upbeater_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WZi-YM-TSc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m43-uA-aQ4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="xH1-0w-zSS">
+                                        <rect key="frame" x="16" y="50" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="FFk-Ev-bDR"/>
+                                            <constraint firstAttribute="width" constant="50" id="i28-gc-G9A"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="xH1-0w-zSS" firstAttribute="top" secondItem="m43-uA-aQ4" secondAttribute="top" constant="50" id="GDJ-fA-csY"/>
+                                    <constraint firstItem="xH1-0w-zSS" firstAttribute="leading" secondItem="m43-uA-aQ4" secondAttribute="leading" constant="16" id="Otp-qr-CSP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="m43-uA-aQ4" secondAttribute="bottom" id="HLJ-2S-xPO"/>
+                            <constraint firstItem="m43-uA-aQ4" firstAttribute="leading" secondItem="JKt-nO-NTs" secondAttribute="leading" id="U0w-FU-on8"/>
+                            <constraint firstItem="m43-uA-aQ4" firstAttribute="trailing" secondItem="JKt-nO-NTs" secondAttribute="trailing" id="sbI-Mw-L0d"/>
+                            <constraint firstItem="m43-uA-aQ4" firstAttribute="top" secondItem="WZi-YM-TSc" secondAttribute="top" id="w7l-ha-OW7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JKt-nO-NTs"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="htl-LW-ruW"/>
+                    <connections>
+                        <outlet property="menuNavigationView" destination="xH1-0w-zSS" id="fS4-cH-zRS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HdH-wh-sPD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.1739130434783" y="109.82142857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xew-e1-Kzn">
+            <objects>
+                <navigationController restorationIdentifier="ContactHRTab" storyboardIdentifier="ContactHRTab" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="jaJ-zc-i6P" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iTs-78-AKt">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VlM-qi-NES" kind="relationship" relationship="rootViewController" id="yd2-YM-SKb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oR5-p4-5a5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142.02898550724638" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+</document>
