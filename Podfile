@@ -10,7 +10,6 @@ target 'Upbeater App' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'Firebase/Database'
-  pod 'Firebase'
 
   # Pods for Upbeater App
 
